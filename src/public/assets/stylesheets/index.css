@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  
+
+  body{
+   background-image: url('../stylesheets/background-astronaut-mars-looking-planet.jpg') ; 
+   background-size: cover;
+  }
+
+  .welcome{
+   margin-top: 10%;
+   text-align: center;
+   color: white;
+
+ 
+}
+
+  
+ 
+  
+  .title-content{
+  text-align: center;
+  color: #042483;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-decoration: overline underline;
+  } 
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card{
+    background: rgb(254, 255, 249);
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px ;
+    box-shadow: 5px 5px 20px black ; 
+  }
+  
+  img{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size:cover ;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  p span{
+    color: #042483;
+  }
+  
+  .navbar {
+    background-color:#84848400 ;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .navbar a{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 28px;
+  }
+  
+  .navbar a:hover{
+    background-color: #0B3D91   ;
+  }
+
+  #toggle{
+    display: none;
+  }
+  
+  .togglearea{
+    background-color:#84848400  ;
+    border-bottom: 2px solid #84848400;
+    color:#848484 ;
+    padding: 10px;
+    display: flex;
+    justify-content:flex-end ;
+  }
+  
+  .togglearea label{
+  height: 45px;
+  width: 50px;
+  color: #848484 ;
+  border-radius:6px ;
+  cursor: pointer;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
+  }
+  
+  .togglearea label span {
+    background-color: white;
+    height: 4px;
+    width: 70%;
+    margin: 2px 0px;
+  }
+  
+  .togglearea{
+    display: none;
+  }
+  
+  @media  (max-width: 700px) {
+
+    body{
+      background-attachment: fixed;
+    }
+    .navbar {
+        flex-direction: column;
+        display: none;
+    }
+
+    #toggle:checked + .navbar{
+        display: flex;
+        
+    }
+
+    .togglearea{
+        display: flex;
+    }
+
+  
+  }
